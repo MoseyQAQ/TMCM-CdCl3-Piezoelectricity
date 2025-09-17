@@ -1,0 +1,18 @@
+INPUT_PARAMETERS
+calculation			       scf
+basis_type 			       lcao
+ecutwfc    			       100
+scf_thr        			       1e-7
+scf_nmax      			       100
+gamma_only 			       0
+kspacing                               0.2
+smearing_method   		       gauss
+smearing_sigma                         0.003
+mixing_type			       pulay
+mixing_beta                            0.6
+dft_functional                         PBE
+cal_force                              1
+cal_stress                             1
+
+out_charge                             1
+vdw_method                             d3_0

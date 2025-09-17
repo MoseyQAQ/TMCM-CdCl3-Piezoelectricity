@@ -1,0 +1,72 @@
+{
+    "model": {
+        "type_map": [
+            "H",
+            "C",
+            "N",
+            "Cl",
+            "Cd"
+        ],
+
+        "descriptor": {
+            "type": "se_e2_a",
+            "sel": "auto",
+            "rcut_smth": 0.5,
+            "rcut": 6.0,
+            "neuron": [
+                25,
+                50,
+                100
+            ],
+            "resnet_dt": false,
+            "axis_neuron": 12,
+            "type_one_side": true,
+            "seed": 1,
+            "_activation_function": "tanh"
+        },
+        "fitting_net": {
+            "type": "dipole",
+            "neuron": [
+                240,
+                240,
+                240
+            ],
+            "resnet_dt": true,
+            "seed": 1
+        }
+
+    },
+
+    "learning_rate": {
+        "type": "exp",
+        "start_lr": 0.001,
+        "stop_lr": 3.51e-08,
+        "decay_steps": 5000
+    },
+
+    "loss": {
+        "type": "tensor",
+	"pref": 1.0,
+        "pref_atomic": 1.0
+    },
+
+    "training": {
+        "set_prefix": "set",
+        "stop_batch": 1000000,
+        "batch_size": "auto",
+        "disp_file": "lcurve.out",
+        "disp_freq": 1000,
+        "numb_test": 4,
+        "save_freq": 100000,
+        "save_ckpt": "model.ckpt",
+        "disp_training": true,
+        "time_training": true,
+        "profiling": false,
+        "profiling_file": "timeline.json",
+        "systems": [
+            "train"
+        ],
+        "seed": 1
+    }
+}
+
