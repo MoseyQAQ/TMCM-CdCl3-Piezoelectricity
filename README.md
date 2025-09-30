@@ -10,6 +10,7 @@
 	- Raw data for training and testing.
 	- **dipole_model/**: Data for the dipole moment model, including `input.json` (input parameters) and `train.zip` (training data).
 	- **force_model/**: Data for the force field model, including `input.json` (input parameters) and `database.zip` (database file).
+    - **README.md**: Details about the training database.
 
 - **model/**
 	- Trained machine learning model files.
