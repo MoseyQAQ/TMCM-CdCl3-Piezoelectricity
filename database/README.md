@@ -4,7 +4,7 @@
 
 (b) All training configurations were generated using the 84-atom primitive unit cell of the ferroelectric phase, which already has relatively large dimensions ($a \approx 9$ Å$, $b \approx 17$ Å, $c \approx 7$ Å). 
 
-(c) __The sampled temperature and pressure conditions:__ Most configurations were sampled from MD simulations performed over a broad range of thermodynamic conditions, including temperatures of 200, 250, 300, 350, 400, and 450~K, and pressures of $-3$, $-2$, 0, 2, and 5~kbar.
+(c) __The sampled temperature and pressure conditions:__ Most configurations were sampled from MD simulations performed over a broad range of thermodynamic conditions, including temperatures of 200, 250, 300, 350, 400, and 450 K, and pressures of -3, -2, 0, 2, and 5 kbar.
 
 (d) __The distribution of configurations across different structural motifs:__ The orientation of the TMCM<sup>+</sup> cations is the most critical structural motif in the system. To demonstrate the diversity of our training set, we analyzed the distribution of the N--Cl bond vector orientation, as shown in the figure below. The distributions of the polar angle $\theta$ and azimuthal angle $\phi$ confirm that the training set spans the full 180-degree range for $\theta$ and 360-degree for $\phi$. This broad angular coverage allows the DP model to accurately capture the full 3D rotational energy surface of the molecular cations.
 
